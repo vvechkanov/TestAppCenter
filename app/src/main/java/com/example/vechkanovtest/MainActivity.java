@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Distribute.checkForUpdate();
+                Toast.makeText(MainActivity.this, "AAA", Toast.LENGTH_LONG).show();
             }
         });
     }
